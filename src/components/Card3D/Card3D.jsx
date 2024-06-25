@@ -56,12 +56,12 @@ const Card3D = () => {
     }, [isFlipped, x, y, glareX, glareY]);
 
     useEffect(() => {
-        if (isFlipped) {
+        if (cardRef.current) {
             const cardRect = cardRef.current.getBoundingClientRect();
             x.set(cardRect.width / 2);
             y.set(cardRect.height / 2);
         }
-    }, [isFlipped, x, y]);
+    }, [x, y]);
 
     return (
         <motion.div 
