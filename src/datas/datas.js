@@ -13,7 +13,7 @@ const datas = [
     id: 2,
     title: 'OhMyFood',
     images: [
-      { src: '/OhMyFood/Homepage.png', title: 'Homepage' },
+      { src: '/OhMyFood/OMFHomepage.png', title: 'Homepage' },
       { src: '/OhMyFood/restaurant1.png', title: 'Page de restaurant' }
     ],
     description: "Intégration de l'interface mobile-first du site d'une start-up, en utilisant SASS pour les animations CSS et Git/GitHub pour le versionnement. Les maquettes pour mobile et desktop, ainsi que le prototype sur Figma, les images et les textes nécessaires ont été fournis.",
@@ -23,7 +23,7 @@ const datas = [
     id: 3,
     title: 'La Panthere',
     images: [
-      { src: '/La_Panthere/Site-corrigé/Homepage.png', title: 'Site corrigé' }
+      { src: '/La_Panthere/Site-corrigé/LPHomepage1.png', title: 'Site corrigé' }
     ],
     description: "Analyse et optimisation du référencement (SEO) du site de l'agence La Panthère, une agence de web design basée à Lyon. L'objectif principal est d'améliorer le classement du site dans les moteurs de recherche pour les termes Entreprise web design Lyon, afin de générer plus de visibilité et d'activité.",
     stacks: 'HTML, CSS, JavaScript',
@@ -32,7 +32,7 @@ const datas = [
     id: 4,
     title: 'Canap',
     images: [
-      { src: '/Canap/Homepage.png', title: 'Homepage' },
+      { src: '/Canap/Homepage.png', title: 'CanapHomepage' },
       { src: '/Canap/Product.png', title: 'Page produit' },
       { src: '/Canap/Order.png', title: 'Commande' },
       { src: '/Canap/Panier_1.png', title: 'Panier 1' },
@@ -45,7 +45,7 @@ const datas = [
     id: 5,
     title: 'Piiquante',
     images: [
-      { src: '/Piiquante/Homepage.png', title: 'Homepage' },
+      { src: '/Piiquante/PiiHomepage.png', title: 'Homepage' },
       { src: '/Piiquante/Login.png', title: 'Page de connexion' },
       { src: '/Piiquante/product.png', title: 'Page Produit' },
       { src: '/Piiquante/AddProduct.png', title: 'Ajouter un produit' }
@@ -57,7 +57,7 @@ const datas = [
     id: 6,
     title: 'Kasa',
     images: [
-      { src: '/Kasa/Homepage.png', title: 'Homepage' },
+      { src: '/Kasa/KasaHomepage.png', title: 'Homepage' },
       { src: '/Kasa/Product.png', title: 'Page produit' },
       { src: '/Kasa/About.png', title: 'Page À propos' }
     ],
