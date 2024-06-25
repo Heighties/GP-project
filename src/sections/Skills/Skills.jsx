@@ -7,7 +7,7 @@ import { AiOutlineConsoleSql } from 'react-icons/ai';
 const Skills = () => {
   return (
     <div className='flex flex-col items-center w-full h-full gap-8 xl:gap-10'>
-      <h1 className='font-bold text-white xl:text-4xl mt-8 xl:mt-24'>Mes compétences</h1>
+      <h1 className='font-bold text-white text-2xl xl:text-4xl mt-8 xl:mt-24'>Mes compétences</h1>
       <div className='items-center xl:items-stretch flex flex-col xl:flex-row w-full xl:w-2/3 xl:h-2/3 gap-4 xl:gap-10'>
         
         <div className='bg-slate-800 border-4 border-white w-3/4 xl:w-1/3 rounded-32 flex flex-col items-center'>
