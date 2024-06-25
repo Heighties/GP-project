@@ -4,7 +4,7 @@ import EndCard from '../../components/Card3D/EndCard';
 const Contact = () => {
   return (
     <div className="flex flex-col items-center w-full h-full mt-8 xl:mt-52 relative [perspective:1000px]">
-      <h2 className="font-bold text-white xl:text-4xl">Me contacter</h2>
+      <h2 className="font-bold text-white text-2xl xl:text-4xl">Me contacter</h2>
       <div className="xl:p-8 mt-8 xl:mt-0 rounded-lg xl:w-[80%]">
         
         {/* Formulaire de contact */}
