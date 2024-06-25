@@ -38,10 +38,10 @@ const Card3D = () => {
             if (!cardRef.current || !glareRef.current || isFlipped) return;
             const { beta, gamma } = event;
             const cardRect = cardRef.current.getBoundingClientRect();
-            x.set((gamma / 90) * cardRect.width);
-            y.set((beta / 90) * cardRect.height);
-            glareX.set((gamma / 90) * cardRect.width - glareRef.current.getBoundingClientRect().width / 2);
-            glareY.set((beta / 90) * cardRect.height - glareRef.current.getBoundingClientRect().height / 2);
+            x.set((gamma / 90) * cardRect.width / 2 + cardRect.width / 2);
+            y.set((beta / 90) * cardRect.height / 2 + cardRect.height / 2);
+            glareX.set((gamma / 90) * cardRect.width / 2 - glareRef.current.getBoundingClientRect().width / 2);
+            glareY.set((beta / 90) * cardRect.height / 2 - glareRef.current.getBoundingClientRect().height / 2);
         };
 
         if (window.DeviceOrientationEvent) {
