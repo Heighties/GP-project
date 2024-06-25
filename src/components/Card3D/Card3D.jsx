@@ -80,7 +80,7 @@ const Card3D = () => {
                         ref={glareRef}
                     />
                     <div className='absolute inset-4 bg-white rounded-32 flex flex-col xl:flex-row'>
-                        <div className='h-32 xl:h-full xl:w-1/2 relative border-4 xl:border-none border-white rounded-32-tl-tr xl:rounded-32-tl-bl custom-shape flex justify-center items-center'>
+                        <div className='h-32 xl:h-full xl:w-1/2 relative border-4 xl:border-none border-white rounded-32 xl:rounded-32-tl-bl custom-shape flex justify-center items-center'>
                         <div className="absolute rounded-32-tl-tr xl:rounded-32-tl-bl inset-0 bg-white bg-opacity-10"></div>
                             <div className='xl:p-4 absolute xl:top-0 xl:left-0 xl:w-full xl:h-full flex justify-center xl:justify-start items-center'>
                             <svg className="w-28 h-28 xl:w-56 xl:h-56" viewBox="0 0 100 137" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -101,15 +101,15 @@ const Card3D = () => {
 
                             </div>
                         </div>
-                        <div className='xl:w-1/2 flex flex-col xl:p-8 rounded-32-tr-br items-center'>
+                        <div className='xl:w-1/2 flex flex-col xl:p-8 rounded-32-tr-br items-center relative'>
                             <div className=''>
-                                <div className='bg-slate-800 shadow-[rgba(0,0,0,0.8)_1px_1px_15px] p-2 rounded-xl flex justify-center'>
+                                <div className='bg-slate-800 shadow-[rgba(0,0,0,0.8)_1px_1px_15px] p-2 rounded-xl flex justify-center -translate-y-6'>
                                     <span className='text-white xl:text-xl font-bold'>Développeur Web</span>
                                 </div>
                             </div>
-                            <div className='text-black flex flex-col items-center xl:items-start mt-6 xl:mt-10'>
+                            <div className='text-black flex flex-col items-center xl:items-start xl:mt-10 rounded-32 shadow-[rgba(0,0,0,0.3)_1px_1px_1px] xl:shadow-none'>
                                 <h1 className='text-xl font-extrabold mb-4'>Geoffrey Pignet</h1>
-                                <div className="flex flex-col gap-2">
+                                <div className="flex flex-col p-6 xl:shadow-none rounded-32 gap-2">
                                 <p className='text-md'>Nouvelle Aquitaine</p>
                                 <p className='text-md'>06 80 42 38 08</p>
                                 <p className='text-md'>geoffreypignet@yahoo.fr</p>
