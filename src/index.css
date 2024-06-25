@@ -1,0 +1,39 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+html, body {
+    overflow: hidden;
+    height: 100%;
+  }
+
+.hide-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, and Opera */
+  }
+
+  /* Styles pour la face arrière de la carte */
+.flipped .back-face {
+    display: block;
+  }
+  
+  .flipped .front-face {
+    display: none;
+  }
+  
+
+  .preserve-3d {
+    transform-style: preserve-3d;
+}
+
+.backface-hidden {
+    backface-visibility: hidden;
+}
+
+.mirror {
+    transform: scaleX(-1);
+  }
+
