@@ -34,6 +34,28 @@ const Card3D = () => {
     };
 
     useEffect(() => {
+        const handleDeviceOrientation = (event) => {
+            if (!cardRef.current || !glareRef.current || isFlipped) return;
+            const { beta, gamma } = event;
+            const cardRect = cardRef.current.getBoundingClientRect();
+            x.set((gamma / 90) * cardRect.width);
+            y.set((beta / 90) * cardRect.height);
+            glareX.set((gamma / 90) * cardRect.width - glareRef.current.getBoundingClientRect().width / 2);
+            glareY.set((beta / 90) * cardRect.height - glareRef.current.getBoundingClientRect().height / 2);
+        };
+
+        if (window.DeviceOrientationEvent) {
+            window.addEventListener("deviceorientation", handleDeviceOrientation, true);
+        }
+
+        return () => {
+            if (window.DeviceOrientationEvent) {
+                window.removeEventListener("deviceorientation", handleDeviceOrientation, true);
+            }
+        };
+    }, [isFlipped, x, y, glareX, glareY]);
+
+    useEffect(() => {
         if (isFlipped) {
             const cardRect = cardRef.current.getBoundingClientRect();
             x.set(cardRect.width / 2);
