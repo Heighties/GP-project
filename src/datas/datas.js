@@ -32,7 +32,7 @@ const datas = [
     id: 4,
     title: 'Canap',
     images: [
-      { src: '/Canap/Homepage.png', title: 'CanapHomepage' },
+      { src: '/Canap/CanapHomepage.png', title: 'CanapHomepage' },
       { src: '/Canap/Product.png', title: 'Page produit' },
       { src: '/Canap/Order.png', title: 'Commande' },
       { src: '/Canap/Panier_1.png', title: 'Panier 1' },
