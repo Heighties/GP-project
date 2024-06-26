@@ -33,7 +33,7 @@ const RealisationModal = ({ isOpen, closeModal, realisation }) => {
           <FaTimes />
         </button>
         
-        <div className='flex flex-col items-center xl:flex-row w-full h-full overflow-x-auto'>
+        <div className='flex flex-col items-center xl:flex-row w-full h-full overflow-x-auto mt-10 xl:mt-0'>
           
           
           
@@ -52,10 +52,10 @@ const RealisationModal = ({ isOpen, closeModal, realisation }) => {
             </div>
             <div className='flex flex-col items-center '>
               <h3 className='text-white text-lg font-bold'>Description :</h3>
-              <p className="mt-2 xl:w-3/4 text-white">{realisation.description}</p>
+              <p className="mt-2 p-4 xl:p-0 xl:w-3/4 text-white">{realisation.description}</p>
             </div>
           </div>
-          <div className="realisation-card cursor-pointer xl:w-1/2 h-full">
+          <div className="realisation-card cursor-pointer mb-10 xl:mb-0 xl:w-1/2 h-full">
             <CarrouselModal images={realisation.images} />
           </div>
         </div>
