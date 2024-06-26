@@ -70,16 +70,16 @@ const datas = [
     images: [
       { src: '/NG-Project_v1/Showreel.png', title: 'Homepage' }
     ],
-    description: 'Description de la réalisation 7.',
+    description: "Portfolio d'un réalisateur développé avec React et Tailwind. Réalisation du frontend responsive et du backend.",
     stacks: 'React, NodeJS, Figma',
   },
   {
     id: 8,
     title: 'Portfolio Geoffrey Pignet',
     images: [
-      { src: '/Portfolio-GP/Card.png', title: 'Carte de visite 3D' }
+      { src: '/Portfolio-GP/Card3D.png', title: 'Carte de visite 3D' }
     ],
-    description: 'Description de la réalisation 8.',
+    description: 'Site sur lequel vous vous trouvez actuellement. Design réalisé avec Figma. Développement frontend crée avec React et Tailwind CSS. Animation de la carte de visite avec FramerMotion.',
     stacks: 'React, Framer Motion, Figma',
   },
 ];
