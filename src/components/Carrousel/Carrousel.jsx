@@ -90,7 +90,7 @@ export const Carrousel = ({ items = [] }) => { // Provide a default value for it
     <div className="relative w-full h-full flex items-center border-black pt-10">
       {scrollLeftVisible && (
         <button
-          className="absolute top-[55%] xl:top-1/2 left-0 transform -translate-y-1/2 ml-4 z-40 rounded-lg bg-white bg-opacity-50"
+          className="absolute top-[55%] xl:top-1/2 left-0 transform -translate-y-1/2 ml-4 z-20 rounded-lg bg-white bg-opacity-50"
           onClick={scrollLeft}
         >
           <IoIosArrowBack size={32} />
@@ -98,7 +98,7 @@ export const Carrousel = ({ items = [] }) => { // Provide a default value for it
       )}
       {scrollRightVisible && (
         <button
-          className="absolute top-[55%] xl:top-1/2 right-0 transform -translate-y-1/2 mr-4 z-40 rounded-lg bg-white bg-opacity-50"
+          className="absolute top-[55%] xl:top-1/2 right-0 transform -translate-y-1/2 mr-4 z-20 rounded-lg bg-white bg-opacity-50"
           onClick={scrollRight}
         >
           <IoIosArrowForward size={32} />
