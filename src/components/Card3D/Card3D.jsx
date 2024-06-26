@@ -66,7 +66,7 @@ const Card3D = () => {
             // x.set((gamma / 90) * cardRect.width / 2 + cardRect.width / 2);
             // y.set((beta / 90) * cardRect.height / 2 + cardRect.height / 2);
             x.set((gamma / 90) * 410 + 410);
-            y.set((beta / 90) * 210 + 210);
+            y.set((beta / 90) * 40 + 40);
             glareX.set((gamma / 90) * cardRect.width / 2 - glareRef.current.getBoundingClientRect().width / 2);
             glareY.set((beta / 90) * cardRect.height / 2 - glareRef.current.getBoundingClientRect().height / 2);
         };
