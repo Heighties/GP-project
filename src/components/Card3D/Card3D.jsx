@@ -37,8 +37,8 @@ const Card3D = () => {
             if (cardRef.current) {
                 const cardRect = cardRef.current.getBoundingClientRect();
                 if (window.innerWidth >= 768) { 
-                    x.set(410);
-                    y.set(220);
+                    x.set(210);
+                    y.set(410);
                     rotateY.set([20, -20]);
                     rotateX.set([-20, 20]);
                 } else {
