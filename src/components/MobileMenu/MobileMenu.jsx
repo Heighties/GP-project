@@ -1,39 +1,29 @@
-import React, { useEffect, useState } from "react";
+import React, { useState, useEffect } from "react";
 
 const MobileMenu = ({ scrollToSection, setMobileMenuOpen }) => {
-  const [isAnimating, setIsAnimating] = useState(false);
-  const [isVisible, setIsVisible] = useState(true); 
+  const [animationState, setAnimationState] = useState('entering');
 
   useEffect(() => {
-    if (isAnimating) {
-      setIsVisible(true);
-    } else {
-      setIsVisible(false);
+    if (animationState === 'exiting') {
+      const timer = setTimeout(() => {
+        setMobileMenuOpen(false);
+      }, 500);
+      return () => clearTimeout(timer);
     }
-  }, [isAnimating]);
-
-  useEffect(() => {
-    setIsAnimating(true);
-  }, []);
+  }, [animationState, setMobileMenuOpen]);
 
   const handleSectionClick = (section) => {
-    setIsAnimating(false);
+    setAnimationState('exiting');
     setTimeout(() => {
       scrollToSection(section);
-      setMobileMenuOpen(false);
     }, 500);
   };
 
   return (
     <div
       className={`fixed top-0 left-0 w-full h-full bg-slate-900 bg-opacity-95 text-white flex flex-col gap-8 items-center justify-center z-20 ${
-        isVisible ? "mobile-menu-enter" : "mobile-menu-exit"
+        animationState === 'entering' ? 'mobile-menu-enter' : 'mobile-menu-exit'
       }`}
-      onAnimationEnd={() => {
-        if (!isVisible) {
-          setMobileMenuOpen(false);
-        }
-      }}
     >
       <button className="text-3xl my-4" onClick={() => handleSectionClick("aboutme")}>
         Infos
