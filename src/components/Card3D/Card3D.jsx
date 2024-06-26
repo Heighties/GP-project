@@ -1,5 +1,3 @@
-"use client";
-
 import React, { useRef, useState, useEffect } from "react";
 import { motion, useMotionValue, useTransform, useSpring, useAnimation } from "framer-motion";
 import { useNavigate } from "react-router-dom";
@@ -8,12 +6,13 @@ import BackCard from "./BackCard";
 const Card3D = () => {
     const cardRef = useRef(null);
     const glareRef = useRef(null);
-    const x = useMotionValue(410);
-    const y = useMotionValue(210);
+    const x = useMotionValue(0);
+    const y = useMotionValue(0);
     const glareX = useMotionValue(0);
     const glareY = useMotionValue(0);
     const rotateY = useTransform(x, [0, 820], [20, -20]);
     const rotateX = useTransform(y, [0, 420], [-20, 20]);
+
     const rotateYSpring = useSpring(rotateY, { damping: 30, stiffness: 100 });
     const rotateXSpring = useSpring(rotateX, { damping: 30, stiffness: 100 });
     const [isFlipped, setIsFlipped] = useState(false);
@@ -34,12 +33,40 @@ const Card3D = () => {
     };
 
     useEffect(() => {
+        const handleResize = () => {
+            if (cardRef.current) {
+                const cardRect = cardRef.current.getBoundingClientRect();
+                if (window.innerWidth >= 768) { 
+                    x.set(410);
+                    y.set(220);
+                    rotateY.set([20, -20]);
+                    rotateX.set([-20, 20]);
+                } else {
+                    x.set(48);
+                    y.set(78);
+                    rotateY.set([-20, 20]); 
+                    rotateX.set([20, -20]);
+                }
+            }
+        };
+    
+
+        handleResize();
+
+        window.addEventListener("resize", handleResize);
+
+        return () => window.removeEventListener("resize", handleResize);
+    }, [x, y, rotateY, rotateX]);
+
+    useEffect(() => {
         const handleDeviceOrientation = (event) => {
             if (!cardRef.current || !glareRef.current || isFlipped) return;
             const { beta, gamma } = event;
             const cardRect = cardRef.current.getBoundingClientRect();
-            x.set((gamma / 90) * cardRect.width / 2 + cardRect.width / 2);
-            y.set((beta / 90) * cardRect.height / 2 + cardRect.height / 2);
+            // x.set((gamma / 90) * cardRect.width / 2 + cardRect.width / 2);
+            // y.set((beta / 90) * cardRect.height / 2 + cardRect.height / 2);
+            x.set((gamma / 90) * 410 + 410);
+            y.set((beta / 90) * 210 + 210);
             glareX.set((gamma / 90) * cardRect.width / 2 - glareRef.current.getBoundingClientRect().width / 2);
             glareY.set((beta / 90) * cardRect.height / 2 - glareRef.current.getBoundingClientRect().height / 2);
         };
@@ -54,14 +81,6 @@ const Card3D = () => {
             }
         };
     }, [isFlipped, x, y, glareX, glareY]);
-
-    useEffect(() => {
-        if (cardRef.current) {
-            const cardRect = cardRef.current.getBoundingClientRect();
-            x.set(cardRect.width / 2);
-            y.set(cardRect.height / 2);
-        }
-    }, [x, y]);
 
     return (
         <motion.div 
