@@ -148,16 +148,16 @@ const Card3D = () => {
                                     <span className='text-white xl:text-xl font-bold'>Développeur Web</span>
                                 </div>
                             </div>
-                            <div className='text-black flex flex-col items-center xl:items-start xl:mt-10 rounded-32 shadow-[rgba(0,0,0,0.3)_1px_1px_1px] xl:shadow-none'>
+                            <div className='text-black flex flex-col items-center xl:items-start xl:mt-6 rounded-32 shadow-[rgba(0,0,0,0.3)_1px_1px_1px] xl:shadow-none'>
                                 <h1 className='text-xl font-extrabold mb-4'>Geoffrey Pignet</h1>
-                                <div className="flex flex-col p-6 xl:shadow-none rounded-32 gap-2">
+                                <div className="flex flex-col p-6 xl:p-0 xl:shadow-none rounded-32 gap-2">
                                 <p className='text-md'>Nouvelle Aquitaine</p>
                                 <p className='text-md'>06 80 42 38 08</p>
                                 <p className='text-md'>geoffreypignet@yahoo.fr</p>
                                 <p className='text-md'>www.linkedin.com/in/geoffrey-pignet</p>
                                 </div>
                             </div>
-                            <button className="mt-10 xl:mt-0 bg-slate-900 px-10 py-2 rounded-full text-white w-1/2" onClick={handleClick}>Site web</button>
+                            <button className="mt-10 bg-slate-900 px-10 py-2 rounded-full text-white w-1/2" onClick={handleClick}>Site web</button>
                         </div>
                     </div>
                 </motion.div>
