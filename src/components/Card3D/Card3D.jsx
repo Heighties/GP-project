@@ -44,8 +44,8 @@ const Card3D = () => {
                 } else {
                     x.set(48);
                     y.set(78);
-                    rotateY.set([-20, 20]); 
-                    rotateX.set([20, -20]);
+                    rotateY.set([-40, 40]); 
+                    rotateX.set([40, -40]);
                 }
             }
         };
