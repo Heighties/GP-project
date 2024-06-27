@@ -8,8 +8,8 @@ const Card3D = () => {
     const glareRef = useRef(null);
     const x = useMotionValue(410);
     const y = useMotionValue(210);
-    const glareX = useMotionValue(0);
-    const glareY = useMotionValue(0);
+    const glareX = useMotionValue(2000);
+    const glareY = useMotionValue(2000);
     const rotateY = useTransform(x, [0, 820], [20, -20]);
     const rotateX = useTransform(y, [0, 420], [-20, 20]);
 
