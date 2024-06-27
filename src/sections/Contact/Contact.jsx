@@ -33,10 +33,21 @@ const Contact = () => {
     }
   };
 
+  // const handleFocus = (event) => {
+  //   const element = event.target;
+  //   const y = element.getBoundingClientRect().top + window.scrollY;
+  //   window.scrollTo({ top: y - 50, behavior: 'smooth' });
+  // };
+
   const handleFocus = (event) => {
-    const element = event.target;
-    const y = element.getBoundingClientRect().top + window.scrollY;
-    window.scrollTo({ top: y - 50, behavior: 'smooth' });
+    if (window.innerWidth <= 768) { 
+      setTimeout(() => {
+        const element = event.target;
+        // const y = element.getBoundingClientRect().top + window.pageYOffset;
+        const y = element.getBoundingClientRect().top + window.scrollY;
+        window.scrollTo({top: y - 50, behavior: 'smooth'});
+      }, 300);  
+    }
   };
 
   return (
