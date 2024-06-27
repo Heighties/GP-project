@@ -75,13 +75,13 @@ const MainModal = () => {
             <div className="sticky top-0 z-10 hidden md:block w-full">
                 <NavBar scrollToSection={scrollToSection} currentSection={currentSection} />
             </div>
-            <div className="h-screen flex items-center justify-center snap-start" ref={aboutMeRef}>
+            <div className="min-h-screen flex items-center justify-center snap-start" ref={aboutMeRef}>
                 <AboutMe scrollToSection={scrollToSection} />
             </div>
-            <div className="h-screen flex items-center justify-center snap-start" ref={skillsRef}>
+            <div className="min-h-screen flex items-center justify-center snap-start" ref={skillsRef}>
                 <Skills />
             </div>
-            <div className="h-screen flex items-center justify-center snap-start" ref={portfolioRef}>
+            <div className="min-h-screen flex items-center justify-center snap-start" ref={portfolioRef}>
                 <Portfolio />
             </div>
             <div className="min-h-screen flex items-center justify-center snap-start bottom-0" ref={contactRef}>
