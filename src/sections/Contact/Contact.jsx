@@ -41,7 +41,7 @@ const Contact = () => {
 
   return (
     <div className="flex flex-col items-center w-full min-h-screen xl:mt-52 relative [perspective:1000px] contact-section">
-      <h2 className="font-bold text-white text-2xl mt-8 xl:mt-0 xl:text-4xl">Me contacter</h2>
+      <h1 className="font-bold text-white text-2xl mt-8 xl:mt-0 xl:text-4xl">Me contacter</h1>
       <div className="xl:p-8 mt-8 xl:mt-0 rounded-lg xl:w-[80%]">
         
         {/* Formulaire de contact */}

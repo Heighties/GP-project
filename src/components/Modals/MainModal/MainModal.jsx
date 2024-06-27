@@ -75,16 +75,16 @@ const MainModal = () => {
             <div className="sticky top-0 z-10 hidden md:block w-full">
                 <NavBar scrollToSection={scrollToSection} currentSection={currentSection} />
             </div>
-            <div className="min-h-screen flex items-center justify-center snap-start" ref={aboutMeRef}>
+            <div className="h-screen flex items-center justify-center snap-start" ref={aboutMeRef}>
                 <AboutMe scrollToSection={scrollToSection} />
             </div>
-            <div className="min-h-screen flex items-center justify-center snap-start" ref={skillsRef}>
+            <div className="h-screen flex items-center justify-center snap-start" ref={skillsRef}>
                 <Skills />
             </div>
-            <div className="min-h-screen flex items-center justify-center snap-start" ref={portfolioRef}>
+            <div className="h-screen flex items-center justify-center snap-start" ref={portfolioRef}>
                 <Portfolio />
             </div>
-            <div className="min-h-screen flex items-center justify-center snap-start" ref={contactRef}>
+            <div className="min-h-screen flex items-center justify-center snap-start bottom-0" ref={contactRef}>
                 <Contact />
             </div>
             <div className="fixed top-0 left-0 w-full justify-between items-center p-4 show-on-mobile hide-on-desktop xl:hidden z-30">
