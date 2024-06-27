@@ -8,24 +8,24 @@ const AboutMe = ({ scrollToSection }) => {
     };
 
     return (
-        <div className="relative xl:p-8 text-white rounded-lg w-full h-full flex justify-center items-center bg-fixed bg-cover bg-parallax">
+        <div className="relative md:p-8 xl:p-8 text-white rounded-lg w-full h-full flex justify-center items-center bg-fixed bg-cover bg-parallax">
             <div className="absolute inset-0 bg-slate-900 bg-opacity-90"></div>
-            <div className='flex flex-col sm:flex-col md:flex-col xl:flex-row  xl:justify-center items-center gap-4 xl:gap-72 xl:w-5/6 z-1 relative'>
+            <div className='flex flex-col sm:flex-col md:flex-row xl:flex-row  xl:justify-center items-center gap-4 xl:gap-72 xl:w-5/6 z-1 relative'>
                 <motion.img
                     src={process.env.PUBLIC_URL + "/profilepic2.png"}
                     alt="Profile picture"
-                    className="w-32 h-32 xl:w-1/5 xl:h-1/5 rounded-full xl:rounded-32 border-4 border-white"
+                    className="w-32 h-32 md:w-1/5 md:h-1/5 xl:w-1/5 xl:h-1/5 rounded-full xl:rounded-32 border-4 border-white"
                     initial="hidden"
                     animate="visible"
                     variants={fadeInUp}
                 />
                 <motion.div
-                    className='flex flex-col gap-2 items-center xl:w-3/4'
+                    className='flex flex-col gap-2 items-center md:w-3/4 xl:w-3/4'
                     initial="hidden"
                     animate="visible"
                     variants={fadeInUp}
                 >
-                    <h1 className="font-bold text-white text-2xl xl:text-4xl mb-6 xl:mb-16">À propos de moi</h1>
+                    <h1 className="font-bold text-white text-2xl md:text-4xl xl:text-4xl mb-6 xl:mb-16">À propos de moi</h1>
                     <div className="flex items-center xl:space-x-4 mb-4">
                         <ul className="flex xl:gap-28 space-x-2">
                             <li className="bg-slate-800 border-2 border-white px-5 py-1 xl:px-10 xl:py-2 rounded-2xl">Curieux</li>
