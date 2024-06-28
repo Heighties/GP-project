@@ -8,7 +8,7 @@ const AboutMe = ({ scrollToSection }) => {
     };
 
     return (
-        <div className="relative md:p-8 xl:p-8 text-white rounded-lg w-full h-full flex justify-center items-center bg-fixed bg-cover bg-parallax">
+        <div className="relative md:p-8 xl:p-8 text-white rounded-lg w-full h-screen flex justify-center items-center bg-fixed bg-cover bg-parallax">
             <div className="absolute inset-0 bg-slate-900 bg-opacity-90"></div>
             <div className='flex flex-col sm:flex-col md:flex-row xl:flex-row  xl:justify-center items-center gap-4 xl:gap-72 xl:w-5/6 z-1 relative'>
                 <motion.img
