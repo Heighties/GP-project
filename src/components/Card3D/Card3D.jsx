@@ -84,7 +84,7 @@ const Card3D = () => {
 
     return (
         <motion.div 
-            className='w-96 aspect-card md:w-[800px] md:aspect-card2 xl:w-[800px] xl:aspect-card2 rounded-32 relative overflow-hidden cursor-pointer' 
+            className='w-96 aspect-card md:w-[600px] md:aspect-card2 xl:w-[800px] xl:aspect-card2 rounded-32 relative overflow-hidden cursor-pointer' 
             onMouseMove={(e) => {
                 if (!cardRef.current || !glareRef.current || isFlipped) return;
                 const cardRect = cardRef.current.getBoundingClientRect();
