@@ -25,7 +25,7 @@ const AboutMe = ({ scrollToSection }) => {
                     animate="visible"
                     variants={fadeInUp}
                 >
-                    <h1 className="font-bold text-white text-2xl md:text-4xl xl:text-4xl mb-6 xl:mb-16">À propos de moi</h1>
+                    <h1 className="font-bold text-white text-2xl md:text-2xl xl:text-4xl mb-6 xl:mb-16">À propos de moi</h1>
                     <div className="flex items-center xl:space-x-4 mb-4">
                         <ul className="flex xl:gap-28 space-x-2">
                             <li className="bg-slate-800 border-2 border-white px-5 py-1 xl:px-10 xl:py-2 rounded-2xl">Curieux</li>
