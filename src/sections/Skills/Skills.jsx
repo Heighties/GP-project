@@ -97,7 +97,7 @@ const Skills = () => {
         </div>
         
       </div>
-      <div className='text-white rounded-lg w-full h-2/5 xl:h-1/3 flex justify-center items-center bg-fixed bg-cover bg-parallax mt-2 xl:mb-10 xl:mt-0'>
+      <div className='text-white rounded-lg w-full h-20 xl:h-1/3 flex justify-center items-center bg-fixed bg-cover bg-parallax mt-2 xl:mb-10 xl:mt-0'>
         <div className='bg-slate-900 bg-opacity-50 w-full h-full flex justify-center items-center'>
             <div className='bg-black bg-opacity-60'>
                 <h2 className='font-bold text-center xl:text-xl'>Ainsi que beaucoup de curiosité et d'envie d'apprendre</h2>
