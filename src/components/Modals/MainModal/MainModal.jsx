@@ -72,7 +72,7 @@ const MainModal = () => {
 
     return (
         <div className="bg-slate-900 h-screen overflow-y-scroll snap-y snap-mandatory hide-scrollbar items-center justify-center">
-            <div className="sticky top-0 z-10 hidden md:block w-full">
+            <div className="sticky top-0 z-10 hidden  xl:block w-full">
                 <NavBar scrollToSection={scrollToSection} currentSection={currentSection} />
             </div>
             <div className="min-h-screen xl:h-screen flex items-center justify-center snap-start" ref={aboutMeRef}>

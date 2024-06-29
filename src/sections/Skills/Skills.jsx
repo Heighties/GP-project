@@ -9,7 +9,7 @@ const Skills = () => {
     <div className='flex flex-col items-center w-full min-h-screen xl:h-full xl:gap-10'>
       <h1 className='font-bold text-white text-2xl xl:text-4xl mt-8 xl:mt-24'>Mes compétences</h1>
 
-      <div className='items-center xl:items-stretch flex flex-col xl:flex-row w-full xl:w-2/3 xl:h-2/3 mt-4 xl:mt-0 xl:gap-10'>
+      <div className='items-center xl:items-stretch flex flex-col md:flex-row xl:flex-row w-full xl:w-2/3 xl:h-2/3 mt-4 xl:mt-0 xl:gap-10'>
         
         <div className='bg-slate-800 border-4 border-white w-3/4 xl:w-1/3 rounded-32 flex flex-col items-center p-2 xl:p-0'>
           <h2 className='text-white xl:text-2xl xl:mt-2'>Frontend</h2>

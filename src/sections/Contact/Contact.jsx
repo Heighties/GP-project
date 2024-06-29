@@ -57,7 +57,7 @@ const Contact = () => {
         
         {/* Formulaire de contact */}
         <form className='flex flex-col items-center' onSubmit={handleSubmit}>
-          <div className='flex flex-col items-center xl:flex-row w-full h-full xl:gap-24'>
+          <div className='flex flex-col items-center md:flex-row xl:flex-row w-full h-full xl:gap-24'>
             <div className='flex flex-col w-3/4 xl:w-1/2 gap-2'>
               <div className='flex flex-row gap-4'>
                 <div className="w-1/2">
@@ -78,7 +78,7 @@ const Contact = () => {
                 <input type="text" id="subject" name="subject" className="w-full border border-gray-300 rounded-md xl:py-2 px-3" onChange={handleChange} onFocus={handleFocus} />
               </div>
             </div>
-            <div className="w-3/4 h-32 xl:w-1/2 xl:h-[198px]">
+            <div className="w-3/4 h-32 md:w-1/2 xl:w-1/2 xl:h-[198px]">
               <label htmlFor="message" className="block text-white text-sm font-semibold mb-1">Votre message</label>
               <textarea id="message" name="message" className="w-full h-full border border-gray-300 rounded-md resize-none" rows="10" onChange={handleChange} onFocus={handleFocus}></textarea>
             </div>
