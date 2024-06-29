@@ -84,7 +84,7 @@ const Card3D = () => {
 
     return (
         <motion.div 
-            className='w-96 aspect-card xl:w-[800px] xl:aspect-card2 rounded-32 relative overflow-hidden cursor-pointer' 
+            className='w-96 aspect-card md:w-[800px] md:aspect-card2 xl:w-[800px] xl:aspect-card2 rounded-32 relative overflow-hidden cursor-pointer' 
             onMouseMove={(e) => {
                 if (!cardRef.current || !glareRef.current || isFlipped) return;
                 const cardRect = cardRef.current.getBoundingClientRect();
@@ -120,10 +120,10 @@ const Card3D = () => {
                         }}
                         ref={glareRef}
                     />
-                    <div className='absolute inset-4 bg-white rounded-32 flex flex-col xl:flex-row'>
-                        <div className='h-32 xl:h-full xl:w-1/2 relative border-4 xl:border-none border-white rounded-32 xl:rounded-32-tl-bl custom-shape flex justify-center items-center'>
-                        <div className="absolute rounded-32-tl-tr xl:rounded-32-tl-bl inset-0 bg-white bg-opacity-10"></div>
-                            <div className='xl:p-4 absolute xl:top-0 xl:left-0 xl:w-full xl:h-full flex justify-center xl:justify-start items-center'>
+                    <div className='absolute inset-4 bg-white rounded-32 flex flex-col md:flex-row xl:flex-row'>
+                        <div className='h-32 md:h-full md:w-1/2 xl:h-full xl:w-1/2 relative border-4 md:border-none xl:border-none border-white rounded-32 md-rounded-32-tl-bl xl:rounded-32-tl-bl custom-shape flex justify-center items-center'>
+                        <div className="absolute rounded-32-tl-tr md:rounded-32-tl-bl xl:rounded-32-tl-bl inset-0 bg-white bg-opacity-10"></div>
+                            <div className='xl:p-4 absolute xl:top-0 xl:left-0 md:w-full md:h-full xl:w-full xl:h-full flex justify-center md:justify-start xl:justify-start items-center'>
                             <svg className="w-28 h-28 xl:w-56 xl:h-56" viewBox="0 0 100 137" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M97 51.4681C97 77.1015 75.9877 97.9362 50 97.9362C24.0123 97.9362 3 77.1015 3 51.4681C3 25.8346 24.0123 5 50 5C75.9877 5 97 25.8346 97 51.4681Z" fill="white" fillOpacity="0.7" stroke="black" strokeWidth="6"/>
                                 <mask id="path-2-outside-1_24_117" maskUnits="userSpaceOnUse" x="35" y="18" width="40" height="67" fill="black">
@@ -142,15 +142,15 @@ const Card3D = () => {
 
                             </div>
                         </div>
-                        <div className='xl:w-1/2 flex flex-col xl:p-8 rounded-32-tr-br items-center relative'>
+                        <div className='md:w-1/2 xl:w-1/2 flex flex-col xl:p-8 rounded-32-tr-br items-center relative'>
                             <div className=''>
                                 <div className='bg-slate-800 shadow-[rgba(0,0,0,0.8)_1px_1px_15px] p-2 rounded-xl flex justify-center -translate-y-6'>
                                     <span className='text-white xl:text-xl font-bold'>Développeur Web</span>
                                 </div>
                             </div>
-                            <div className='text-black flex flex-col items-center xl:items-start xl:mt-6 rounded-32 shadow-[rgba(0,0,0,0.3)_1px_1px_1px] xl:shadow-none'>
+                            <div className='text-black flex flex-col items-center md:items-start xl:items-start xl:mt-6 rounded-32 shadow-[rgba(0,0,0,0.3)_1px_1px_1px] md:shadow-none'>
                                 <h1 className='text-xl font-extrabold mb-4'>Geoffrey Pignet</h1>
-                                <div className="flex flex-col p-6 xl:p-0 xl:shadow-none rounded-32 gap-2">
+                                <div className="flex flex-col p-6 xl:p-0 md:shadow-none rounded-32 gap-2">
                                 <p className='text-md'>Nouvelle Aquitaine</p>
                                 <p className='text-md'>06 80 42 38 08</p>
                                 <p className='text-md'>geoffreypignet@yahoo.fr</p>
