@@ -121,7 +121,7 @@ const Card3D = () => {
                         ref={glareRef}
                     />
                     <div className='absolute inset-4 bg-white rounded-32 flex flex-col md:flex-row xl:flex-row'>
-                        <div className='h-32 md:h-full md:w-1/2 xl:h-full xl:w-1/2 relative border-4 md:border-none xl:border-none border-white rounded-32 md-rounded-32-tl-bl xl:rounded-32-tl-bl custom-shape flex justify-center items-center'>
+                        <div className='h-32 md:h-full md:w-1/2 relative border-4 md:border-none xl:border-none border-white rounded-32 md-rounded-32-tl-bl xl:rounded-32-tl-bl custom-shape flex justify-center items-center'>
                         <div className="absolute rounded-32-tl-tr md:rounded-32-tl-bl xl:rounded-32-tl-bl inset-0 bg-white bg-opacity-10"></div>
                             <div className='xl:p-4 absolute xl:top-0 xl:left-0 md:w-full md:h-full xl:w-full xl:h-full flex justify-center md:justify-start xl:justify-start items-center'>
                             <svg className="w-28 h-28 xl:w-56 xl:h-56" viewBox="0 0 100 137" fill="none" xmlns="http://www.w3.org/2000/svg">
