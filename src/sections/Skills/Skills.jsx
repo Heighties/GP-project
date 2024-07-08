@@ -6,14 +6,14 @@ import { AiOutlineConsoleSql } from 'react-icons/ai';
 
 const Skills = () => {
   return (
-    <div className='flex flex-col items-center w-full min-h-screen xl:h-full xl:gap-10'>
-      <h1 className='font-bold text-white text-2xl xl:text-4xl mt-8 xl:mt-24'>Mes compétences</h1>
+    <div className='flex flex-col items-center w-full min-h-screen md:h-full xl:h-full md:gap-10'>
+      <h1 className='font-bold text-white text-2xl xl:text-4xl mt-8 md:mt-24'>Mes compétences</h1>
 
-      <div className='items-center xl:items-stretch flex flex-col md:flex-row xl:flex-row w-full xl:w-2/3 xl:h-2/3 mt-4 xl:mt-0 xl:gap-10'>
+      <div className='items-center xl:items-stretch flex flex-col md:flex-row xl:flex-row w-full xl:w-2/3 xl:h-2/3 mt-4 xl:mt-0 md:gap-2 xl:gap-10'>
         
-        <div className='bg-slate-800 border-4 border-white w-3/4 xl:w-1/3 rounded-32 flex flex-col items-center p-2 xl:p-0'>
+        <div className='bg-slate-800 border-4 border-white w-3/4 md:w-1/3 md:h-full xl:w-1/3 rounded-32 flex flex-col items-center p-2 xl:p-0'>
           <h2 className='text-white xl:text-2xl xl:mt-2'>Frontend</h2>
-          <div className='grid grid-cols-3 xl:gap-10 mt-2 xl:mt-10'>
+          <div className='grid grid-cols-3 md:gap-10 mt-2 md:mt-10'>
             <div className='flex flex-col items-center'>
               <FaHtml5 className="text-white text-2xl xl:text-4xl" />
               <span className='text-white text-sm'>HTML</span>
@@ -41,9 +41,9 @@ const Skills = () => {
           </div>
         </div>
         
-        <div className='bg-slate-800 border-4 border-white w-3/4 xl:w-1/3 h-full rounded-32 flex flex-col items-center mt-2 xl:mt-0 p-2 xl:p-0'>
+        <div className='bg-slate-800 border-4 border-white w-3/4 md:w-1/3 xl:w-1/3 h-full rounded-32 flex flex-col items-center mt-2 xl:mt-0 p-2 xl:p-0'>
           <h2 className='text-white xl:text-2xl xl:mt-2'>Backend</h2>
-          <div className='flex flex-row xl:grid xl:grid-cols-2 gap-4 xl:gap-16 mt-2 xl:mt-10'>
+          <div className='flex flex-row md:grid md:grid-cols-2 gap-4 md:gap-16 mt-2 md:mt-10'>
             <div className='flex flex-col items-center'>
               <FaNodeJs className="text-white text-2xl xl:text-4xl" />
               <span className='text-white text-sm'>NodeJS</span>
@@ -63,10 +63,10 @@ const Skills = () => {
           </div>
         </div>
         
-        <div className='flex flex-col w-3/4 xl:w-1/3 xl:gap-10 p-2 xl:p-0'>
-          <div className='bg-slate-800 border-4 border-white w-full xl:w-full xl:h-1/2 rounded-32 flex flex-col items-center p-2 xl:p-0'>
+        <div className='flex flex-col w-3/4 md:w-1/3 xl:w-1/3 xl:gap-10 p-2 xl:p-0'>
+          <div className='bg-slate-800 border-4 border-white w-full xl:h-1/2 rounded-32 flex flex-col items-center p-2 xl:p-0'>
             <h2 className='text-white xl:text-2xl xl:mt-2'>Web design</h2>
-            <div className='flex flex-wrap justify-center items-center xl:gap-10 mt-2 xl:mt-4'>
+            <div className='flex flex-wrap justify-center items-center xl:gap-10 mt-2 md:mt-4'>
               <div className='flex flex-col items-center'>
                 <SiFigma className="text-white text-2xl ml-7 xl:ml-0 xl:text-4xl" />
                 <span className='text-white ml-7 xl:ml-0 text-sm'>Figma</span>

@@ -51,13 +51,13 @@ const Contact = () => {
   };
 
   return (
-    <div className="flex flex-col items-center w-full min-h-screen xl:mt-52 relative [perspective:1000px] contact-section">
+    <div className="flex flex-col items-center w-full min-h-screen md:mt-24 xl:mt-52 relative [perspective:1000px] contact-section">
       <h1 className="font-bold text-white text-2xl mt-8 xl:mt-0 xl:text-4xl">Me contacter</h1>
       <div className="xl:p-8 mt-8 xl:mt-0 rounded-lg xl:w-[80%]">
         
         {/* Formulaire de contact */}
         <form className='flex flex-col items-center' onSubmit={handleSubmit}>
-          <div className='flex flex-col items-center md:flex-row xl:flex-row w-full h-full xl:gap-24'>
+          <div className='flex flex-col items-center md:flex-row xl:flex-row w-full h-full md:gap-10 xl:gap-24'>
             <div className='flex flex-col w-3/4 xl:w-1/2 gap-2'>
               <div className='flex flex-row gap-4'>
                 <div className="w-1/2">
