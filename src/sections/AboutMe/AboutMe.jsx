@@ -33,13 +33,13 @@ const AboutMe = ({ scrollToSection }) => {
           </div>
           <div className="flex items-center xl:space-x-4 mb-4">
             <ul className="flex xl:gap-28 space-x-2">
-              <li className="bg-slate-800 border-2 border-white px-5 py-1 xl:px-10 xl:py-2 rounded-2xl">
+              <li className="bg-slate-800 border-2 border-slate-600 hover:border-slate-400 px-5 py-1 xl:px-10 xl:py-2 rounded-2xl">
                 Curieux
               </li>
-              <li className="bg-slate-800 border-2 border-white px-5 py-1 xl:px-10 xl:py-2 rounded-2xl">
+              <li className="bg-slate-800 border-2 border-slate-600 hover:border-slate-400 px-5 py-1 xl:px-10 xl:py-2 rounded-2xl">
                 Créatif
               </li>
-              <li className="bg-slate-800 border-2 border-white px-5 py-1 xl:px-10 xl:py-2 rounded-2xl">
+              <li className="bg-slate-800 border-2 border-slate-600 hover:border-slate-400 px-5 py-1 xl:px-10 xl:py-2 rounded-2xl">
                 Autonome
               </li>
             </ul>
@@ -59,7 +59,7 @@ const AboutMe = ({ scrollToSection }) => {
           </p>
           <button
             onClick={() => scrollToSection("contact")}
-            className="mt-5 xl:mt-10 bg-slate-700 border-2 border-white px-10 py-2 rounded-full"
+            className="mt-5 xl:mt-10 bg-slate-700 border-2 border-slate-400 px-10 py-2 rounded-full"
           >
             Me contacter
           </button>

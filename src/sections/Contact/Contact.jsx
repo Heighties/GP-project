@@ -149,7 +149,7 @@ const Contact = () => {
           </div>
           <button
             type="submit"
-            className="bg-slate-700 text-white border-2 border-white font-bold py-2 px-4 mt-10 xl:w-1/6 rounded-full"
+            className="bg-slate-700 text-white border-2 border-slate-400 font-bold py-2 px-4 mt-10 xl:w-1/6 rounded-full"
           >
             Envoyer
           </button>

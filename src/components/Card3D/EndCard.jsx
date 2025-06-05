@@ -1,6 +1,6 @@
-import React, { useRef } from 'react';
-import { motion, useMotionValue, useTransform } from 'framer-motion';
-import { useNavigate } from 'react-router-dom';
+import React, { useRef } from "react";
+import { motion, useMotionValue, useTransform } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 const EndCard = () => {
   const cardRef = useRef(null);
@@ -27,16 +27,16 @@ const EndCard = () => {
   };
 
   const handleClick = () => {
-    navigate('/');
+    navigate("/");
   };
 
   return (
     <motion.div
-      className="relative realisation-card mt-6 xl:mt-0 w-64 h-36 xl:w-96 xl:h-48 flex flex-col items-center justify-center border-[3px] border-white rounded-32"
+      className="relative realisation-card mt-6 xl:mt-0 w-64 h-36 xl:w-96 xl:h-48 flex flex-col items-center justify-center border-2 border-slate-600 hover:border-slate-400 rounded-2xl"
       style={{
         backgroundImage: `url(${process.env.PUBLIC_URL}/technology.jpg)`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center bottom',
+        backgroundSize: "cover",
+        backgroundPosition: "center bottom",
         rotateY: rotateY,
         rotateX: rotateX,
       }}
@@ -47,9 +47,11 @@ const EndCard = () => {
       <div className="absolute inset-0 bg-slate-900 bg-opacity-70 rounded-32"></div>
 
       <h1 className="text-white text-sm xl:text-lg font-bold z-10 text-center xl:ml-8 xl:mr-8">
-        Merci pour votre visite<br />et à bientôt pour de futurs projets !
+        Merci pour votre visite
+        <br />
+        et à bientôt pour de futurs projets !
       </h1>
-      <button 
+      <button
         className="bg-slate-700 text-white border-2 border-white font-bold px-2 xl:px-4 mt-8 rounded-full z-10"
         onClick={handleClick}
       >

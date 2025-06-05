@@ -1,9 +1,10 @@
-import React, { useState, useRef, useEffect } from 'react';
-import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
-import RealCard from '../RealCard/RealCard';
-import RealisationModal from '../Modals/RealisationModal/RealisationModal';
+import React, { useState, useRef, useEffect } from "react";
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+import RealCard from "../RealCard/RealCard";
+import RealisationModal from "../Modals/RealisationModal/RealisationModal";
 
-export const Carrousel = ({ items = [] }) => { // Provide a default value for items
+export const Carrousel = ({ items = [] }) => {
+  // Provide a default value for items
   const [scrollLeftVisible, setScrollLeftVisible] = useState(false);
   const [scrollRightVisible, setScrollRightVisible] = useState(true);
   const [modalOpen, setModalOpen] = useState(false);
@@ -17,7 +18,7 @@ export const Carrousel = ({ items = [] }) => { // Provide a default value for it
     } else if (window.innerWidth >= 768 && window.innerWidth <= 1280) {
       return 8;
     }
-    return 12; 
+    return 12;
   };
 
   const [itemsPerSlide, setItemsPerSlide] = useState(getItemsPerSlide);
@@ -27,9 +28,9 @@ export const Carrousel = ({ items = [] }) => { // Provide a default value for it
   };
 
   useEffect(() => {
-    window.addEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
     return () => {
-      window.removeEventListener('resize', handleResize);
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 
@@ -48,7 +49,7 @@ export const Carrousel = ({ items = [] }) => { // Provide a default value for it
     if (container) {
       container.scrollBy({
         left: -container.clientWidth,
-        behavior: 'smooth',
+        behavior: "smooth",
       });
     }
   };
@@ -58,7 +59,7 @@ export const Carrousel = ({ items = [] }) => { // Provide a default value for it
     if (container) {
       container.scrollBy({
         left: container.clientWidth,
-        behavior: 'smooth',
+        behavior: "smooth",
       });
     }
   };
@@ -118,16 +119,22 @@ export const Carrousel = ({ items = [] }) => { // Provide a default value for it
                 grid-rows-2 sm:grid-rows-2 md:grid-rows-2 lg:grid-rows-3 gap-y-12 gap-x-6"
             >
               {slide.map((item, index) => (
-                
-                <RealCard  key={index} realisation={item} openModal={openModal} />
-            
+                <RealCard
+                  key={index}
+                  realisation={item}
+                  openModal={openModal}
+                />
               ))}
             </div>
           ))}
         </div>
       </div>
-      <div className='flex items-center'>
-      <RealisationModal isOpen={modalOpen} closeModal={closeModal} realisation={selectedRealisation} />
+      <div className="flex items-center">
+        <RealisationModal
+          isOpen={modalOpen}
+          closeModal={closeModal}
+          realisation={selectedRealisation}
+        />
       </div>
     </div>
   );
