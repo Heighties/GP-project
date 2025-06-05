@@ -1,50 +1,25 @@
-import {
-  FaHtml5,
-  FaCss3Alt,
-  FaJs,
-  FaReact,
-  FaNodeJs,
-  FaGitAlt,
-  FaGithub,
-  FaTerminal,
-} from "react-icons/fa";
-import {
-  SiTailwindcss,
-  SiFigma,
-  SiMongodb,
-  SiFramer,
-  SiStrapi,
-} from "react-icons/si";
-import { DiSass } from "react-icons/di";
-import { AiOutlineConsoleSql } from "react-icons/ai";
+import { stackIconMap } from "../../utils/stackIcons";
 
 const Skills = () => {
   const frontendSkills = [
-    { icon: FaHtml5, name: "HTML", color: "text-orange-500" },
-    { icon: FaCss3Alt, name: "CSS", color: "text-blue-500" },
-    { icon: FaJs, name: "JavaScript", color: "text-yellow-500" },
-    { icon: DiSass, name: "SCSS", color: "text-pink-500" },
-    { icon: FaReact, name: "React", color: "text-cyan-400" },
-    { icon: SiTailwindcss, name: "Tailwind", color: "text-teal-400" },
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "SCSS",
+    "React",
+    "Tailwind",
   ];
 
-  const backendSkills = [
-    { icon: FaNodeJs, name: "NodeJS", color: "text-green-500" },
-    { icon: SiStrapi, name: "Strapi", color: "text-purple-500" },
-    { icon: AiOutlineConsoleSql, name: "SQL", color: "text-blue-400" },
-    { icon: SiMongodb, name: "MongoDB", color: "text-green-400" },
-  ];
+  const backendSkills = ["NodeJS", "Strapi", "SQL", "MongoDB"];
+  const designSkills = ["Figma", "Framer Motion"];
+  const otherSkills = ["Git", "GitHub", "Terminal"];
 
-  const designSkills = [
-    { icon: SiFigma, name: "Figma", color: "text-purple-400" },
-    { icon: SiFramer, name: "Framer Motion", color: "text-pink-400" },
-  ];
-
-  const otherSkills = [
-    { icon: FaGitAlt, name: "Git", color: "text-orange-600" },
-    { icon: FaGithub, name: "GitHub", color: "text-gray-400" },
-    { icon: FaTerminal, name: "Terminal", color: "text-green-400" },
-  ];
+  const buildSkillData = (skillNames) =>
+    skillNames.map((name) => ({
+      icon: stackIconMap[name].icon,
+      name,
+      color: stackIconMap[name].color,
+    }));
 
   const SkillCard = ({ skills, title, gridCols = "grid-cols-3" }) => (
     <div className="bg-gradient-to-br from-slate-800 to-slate-900 border-2 border-slate-600 hover:border-slate-400 transition-all duration-300 w-full rounded-2xl flex flex-col items-center p-4 shadow-md hover:shadow-lg transform hover:-translate-y-1">
@@ -85,9 +60,9 @@ const Skills = () => {
 
       <div className="w-full max-w-6xl px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
-          <SkillCard skills={frontendSkills} title="Frontend" />
+          <SkillCard skills={buildSkillData(frontendSkills)} title="Frontend" />
           <SkillCard
-            skills={backendSkills}
+            skills={buildSkillData(backendSkills)}
             title="Backend"
             gridCols="grid-cols-2"
           />
@@ -95,11 +70,14 @@ const Skills = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
           <SkillCard
-            skills={designSkills}
+            skills={buildSkillData(designSkills)}
             title="Web Design"
             gridCols="grid-cols-2"
           />
-          <SkillCard skills={otherSkills} title="Outils & Divers" />
+          <SkillCard
+            skills={buildSkillData(otherSkills)}
+            title="Outils & Divers"
+          />
         </div>
       </div>
 

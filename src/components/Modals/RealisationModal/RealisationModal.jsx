@@ -1,43 +1,7 @@
 import React from "react";
-import {
-  FaTimes,
-  FaHtml5,
-  FaCss3Alt,
-  FaJs,
-  FaReact,
-  FaVuejs,
-  FaAngular,
-  FaNodeJs,
-  FaGitAlt,
-  FaGithub,
-} from "react-icons/fa";
-import {
-  SiTailwindcss,
-  SiFigma,
-  SiMongodb,
-  SiFramer,
-  SiJquery,
-} from "react-icons/si";
-import { DiSass } from "react-icons/di";
+import { FaTimes } from "react-icons/fa";
+import { stackIconMap } from "../../../utils/stackIcons";
 import CarrouselModal from "../../Carrousel/CarrouselModal";
-
-const stackIcons = {
-  HTML: <FaHtml5 className="text-white text-4xl" />,
-  CSS: <FaCss3Alt className="text-white text-4xl" />,
-  JavaScript: <FaJs className="text-white text-4xl" />,
-  React: <FaReact className="text-white text-4xl" />,
-  "Vue.js": <FaVuejs className="text-white text-4xl" />,
-  Angular: <FaAngular className="text-white text-4xl" />,
-  jQuery: <SiJquery className="text-white text-4xl" />,
-  SCSS: <DiSass className="text-white text-4xl" />,
-  NodeJS: <FaNodeJs className="text-white text-4xl" />,
-  Tailwind: <SiTailwindcss className="text-white text-4xl" />,
-  Figma: <SiFigma className="text-white text-4xl" />,
-  MongoDB: <SiMongodb className="text-white text-4xl" />,
-  "Framer Motion": <SiFramer className="text-white text-4xl" />,
-  Git: <FaGitAlt className="text-white text-4xl" />,
-  GitHub: <FaGithub className="text-white text-4xl" />,
-};
 
 const RealisationModal = ({ isOpen, closeModal, realisation }) => {
   if (!isOpen) return null;
@@ -58,14 +22,20 @@ const RealisationModal = ({ isOpen, closeModal, realisation }) => {
               {realisation.title}
             </h2>
             <div className="flex flex-col items-center">
-              <h3 className="text-white text-lg font-bold">Stacks : </h3>
-              <div className="mt-2 flex space-x-2 gap-10">
-                {realisation.stacks.split(", ").map((stack) => (
-                  <div key={stack} className="flex flex-col items-center">
-                    {stackIcons[stack.trim()]}
-                    <span className="text-white text-sm">{stack.trim()}</span>
-                  </div>
-                ))}
+              <h3 className="text-white text-lg font-bold">Stacks :</h3>
+              <div className="mt-2 flex flex-wrap justify-center gap-6">
+                {realisation.stacks.split(", ").map((stack) => {
+                  const tech = stackIconMap[stack.trim()];
+                  const Icon = tech?.icon;
+                  return Icon ? (
+                    <div key={stack} className="flex flex-col items-center">
+                      <Icon className={`text-4xl ${tech.color}`} />
+                      <span className="text-white text-sm mt-1">
+                        {stack.trim()}
+                      </span>
+                    </div>
+                  ) : null;
+                })}
               </div>
             </div>
             <div className="flex flex-col items-center ">
