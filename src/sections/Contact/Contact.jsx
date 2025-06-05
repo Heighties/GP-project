@@ -52,10 +52,12 @@ const Contact = () => {
 
   return (
     <div className="flex flex-col items-center w-full min-h-screen md:mt-24 xl:mt-52 relative [perspective:1000px] contact-section">
-      <h1 className="font-bold text-white text-2xl mt-8 xl:mt-0 xl:text-4xl">
-        Me contacter
-      </h1>
-      <div className="w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full"></div>
+      <div className="text-center mb-6">
+        <h1 className="font-bold text-white text-2xl xl:text-4xl mb-3">
+          Me contacter
+        </h1>
+        <div className="w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full"></div>
+      </div>
       <div className="xl:p-8 mt-8 xl:mt-0 rounded-lg xl:w-[80%]">
         {/* Formulaire de contact */}
         <form className="flex flex-col items-center" onSubmit={handleSubmit}>
