@@ -45,17 +45,20 @@ const AboutMe = ({ scrollToSection }) => {
             </ul>
           </div>
           <p className="pl-6 pr-6 xl:pl-0 xl:pr-0 w-full text-sm xl:text-lg">
-            Développeur web indépendant basé en Nouvelle Aquitaine, ma
-            reconversion professionnelle m'a permis de marier ma curiosité et
-            mon envie de créer par le biais de mes compétences techniques. Fort
-            de diverses expériences, j'ai su m'adapter et évoluer pour concevoir
-            des projets de A à Z. De la conception de maquettes, au
-            développement frontend et backend, ainsi qu'à la création d'API,
-            j'aborde chaque projet avec passion et méthode. Aussi, mon intérêt
-            pour le SEO (référencement naturel) me permet d'optimiser la
-            visibilité et l'efficacité des sites que je développe. Curieux de
-            nature, j'apprends en continu pour proposer des solutions innovantes
-            et sur-mesure.
+            Développeur web basé en Nouvelle-Aquitaine, je me suis reconverti
+            avec la volonté d’allier curiosité, créativité et rigueur technique.
+            Mon parcours, nourri par l’autonomie et la diversité des projets,
+            m’a permis de développer une vision complète du développement web,
+            de la maquette à la mise en production, en passant par
+            l’optimisation SEO. Dans un environnement en constante évolution,
+            marqué notamment par l’essor de l’IA, le rôle du développeur
+            s’enrichit. Il ne s’agit plus seulement de coder, mais aussi de
+            comprendre les enjeux métiers, d’optimiser les processus, de
+            collaborer efficacement et de faire les bons choix technologiques
+            pour répondre aux besoins réels. M’inscrivant pleinement dans cette
+            évolution, et soucieux de la qualité comme de l’impact de mon
+            travail, je suis à la recherche d’opportunités pour collaborer sur
+            des projets ambitieux.
           </p>
           <button
             onClick={() => scrollToSection("contact")}
