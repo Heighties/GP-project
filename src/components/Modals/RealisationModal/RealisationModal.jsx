@@ -23,7 +23,7 @@ const RealisationModal = ({ isOpen, closeModal, realisation }) => {
             </h2>
             <div className="flex flex-col items-center">
               <h3 className="text-white text-lg font-bold">Stacks :</h3>
-              <div className="mt-2 flex flex-wrap justify-center gap-6">
+              <div className="mt-8 flex flex-wrap justify-center gap-6">
                 {realisation.stacks.split(", ").map((stack) => {
                   const tech = stackIconMap[stack.trim()];
                   const Icon = tech?.icon;
