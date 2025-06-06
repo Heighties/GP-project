@@ -189,14 +189,46 @@ const Card3D = () => {
                 <h1 className="text-xl font-extrabold mb-4">Geoffrey Pignet</h1>
                 <div className="flex flex-col p-6 xl:p-0 md:shadow-none rounded-32 gap-2">
                   <p className="text-md">Nouvelle Aquitaine</p>
-                  <p className="text-md">06 80 42 38 08</p>
-                  <p className="text-md">geoffreypignet@yahoo.fr</p>
-                  <p className="text-md">www.linkedin.com/in/geoffrey-pignet</p>
+                  <a
+                    href="tel:+33680423808"
+                    className="text-md hover:underline z-50 cursor-pointer"
+                  >
+                    06 80 42 38 08
+                  </a>
+                  <a
+                    href="mailto:geoffreypignet@yahoo.fr"
+                    className="text-md hover:underline z-50 cursor-pointer"
+                  >
+                    geoffreypignet@yahoo.fr
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/geoffrey-pignet"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-md text-blue-600 hover:underlin z-50 cursor-pointer"
+                  >
+                    www.linkedin.com/in/geoffrey-pignet
+                  </a>
                 </div>
               </div>
               <button
                 onClick={handleClick}
-                className="mt-10 bg-slate-900 px-10 py-2 rounded-full text-white w-1/2 z-50 border-slate-600 hover:border-slate-400 transition-all duration-300 shadow-md hover:shadow-lg transform hover:scale-105"
+                className="
+    mt-10
+    bg-slate-900
+    px-10 py-2
+    rounded-full
+    text-white
+    w-1/2
+    z-50
+    border border-slate-600
+    transition-all duration-300
+    shadow-[0_4px_15px_rgba(0,0,0,0.5)]
+    hover:shadow-[0_8px_25px_rgba(0,0,0,0.8)]
+    hover:border-slate-400
+    transform hover:scale-105
+    hover:bg-slate-800
+  "
               >
                 Site web
               </button>
