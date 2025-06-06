@@ -8,6 +8,7 @@ import {
 } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import BackCard from "./BackCard";
+import { FaPhoneAlt, FaEnvelope, FaLinkedin } from "react-icons/fa";
 
 const Card3D = () => {
   const cardRef = useRef(null);
@@ -191,22 +192,27 @@ const Card3D = () => {
                   <p className="text-md">Nouvelle Aquitaine</p>
                   <a
                     href="tel:+33680423808"
-                    className="text-md hover:underline z-50 cursor-pointer"
+                    className="flex items-center gap-2 text-md text-black hover:text-blue-600 hover:underline z-50 cursor-pointer"
                   >
+                    <FaPhoneAlt className="text-green-500" />
                     06 80 42 38 08
                   </a>
+
                   <a
                     href="mailto:geoffreypignet@yahoo.fr"
-                    className="text-md hover:underline z-50 cursor-pointer"
+                    className="flex items-center gap-2 text-md text-black hover:text-blue-600 hover:underline z-50 cursor-pointer"
                   >
+                    <FaEnvelope className="text-red-500" />
                     geoffreypignet@yahoo.fr
                   </a>
+
                   <a
                     href="https://www.linkedin.com/in/geoffrey-pignet"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-md text-blue-600 hover:underlin z-50 cursor-pointer"
+                    className="flex items-center gap-2 text-md text-black hover:text-blue-600 hover:underline z-50 cursor-pointer"
                   >
+                    <FaLinkedin className="text-blue-600" />
                     www.linkedin.com/in/geoffrey-pignet
                   </a>
                 </div>
