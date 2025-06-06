@@ -180,13 +180,13 @@ const Card3D = () => {
             </div>
             <div className="md:w-1/2 xl:w-1/2 flex flex-col md:p-8 rounded-32-tr-br items-center relative">
               <div className="">
-                <div className="bg-slate-800 shadow-[rgba(0,0,0,0.8)_1px_1px_15px] p-2 rounded-xl flex justify-center -translate-y-6">
+                <div className="bg-slate-800 shadow-[rgba(0,0,0,0.8)_1px_1px_15px] xl:mt-4 p-2 rounded-xl flex justify-center -translate-y-6">
                   <span className="text-white xl:text-xl font-bold">
                     Développeur Web
                   </span>
                 </div>
               </div>
-              <div className="text-black flex flex-col items-center md:items-start xl:items-start xl:mt-6 rounded-32 shadow-[rgba(0,0,0,0.3)_1px_1px_1px] md:shadow-none">
+              <div className="text-black flex flex-col items-center md:items-start xl:items-start xl:mt-4 rounded-32 shadow-[rgba(0,0,0,0.3)_1px_1px_1px] md:shadow-none">
                 <h1 className="text-xl font-extrabold mb-4">Geoffrey Pignet</h1>
                 <div className="flex flex-col p-6 xl:p-0 md:shadow-none rounded-32 gap-2">
                   <p className="text-md">Nouvelle Aquitaine</p>
