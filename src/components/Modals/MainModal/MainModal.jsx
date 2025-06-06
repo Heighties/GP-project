@@ -85,7 +85,7 @@ const MainModal = () => {
 
   return (
     <div
-      className="bg-slate-900 h-screen overflow-y-scroll snap-y snap-mandatory hide-scrollbar items-center justify-center"
+      className="bg-slate-900 h-screen overflow-y-scroll hide-scrollbar items-center justify-center"
       ref={modalRef}
     >
       <div className="sticky top-0 z-10 hidden xl:block w-full">
@@ -96,25 +96,25 @@ const MainModal = () => {
       </div>
 
       <div
-        className="min-h-screen xl:h-screen flex items-center justify-center snap-start"
+        className="min-h-screen xl:h-screen flex items-center justify-center "
         ref={aboutMeRef}
       >
         <AboutMe scrollToSection={scrollToSection} />
       </div>
       <div
-        className="min-h-screen xl:h-screen flex items-center justify-center snap-start"
+        className="min-h-screen xl:h-screen flex items-center justify-center "
         ref={skillsRef}
       >
         <Skills />
       </div>
       <div
-        className="min-h-screen xl:h-screen flex items-center justify-center snap-start"
+        className="min-h-screen xl:h-screen flex items-center justify-center "
         ref={portfolioRef}
       >
         <Portfolio />
       </div>
       <div
-        className="min-h-screen xl:h-screen flex items-center justify-center snap-start bottom-0"
+        className="min-h-screen xl:h-screen flex items-center justify-center  bottom-0"
         ref={contactRef}
       >
         <Contact />

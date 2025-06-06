@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { IoIosArrowDown } from "react-icons/io";
 
 const NavBar = ({ scrollToSection, currentSection }) => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -34,40 +33,28 @@ const NavBar = ({ scrollToSection, currentSection }) => {
           />
         </svg>
       </Link>
+
       <ul className="flex space-x-4 gap-40">
-        <li
-          className={`${
-            currentSection === "aboutme" ? "font-bold" : ""
-          } cursor-pointer`}
-          onClick={() => scrollToSection("aboutme")}
-        >
-          À propos de moi
-        </li>
-        <li
-          className={`${
-            currentSection === "skills" ? "font-bold" : ""
-          } cursor-pointer`}
-          onClick={() => scrollToSection("skills")}
-        >
-          Compétences
-        </li>
-        <li
-          className={`${
-            currentSection === "portfolio" ? "font-bold" : ""
-          } cursor-pointer`}
-          onClick={() => scrollToSection("portfolio")}
-        >
-          Portfolio
-        </li>
-        <li
-          className={`${
-            currentSection === "contact" ? "font-bold" : ""
-          } cursor-pointer`}
-          onClick={() => scrollToSection("contact")}
-        >
-          Contact
-        </li>
+        {[
+          { id: "aboutme", label: "À propos de moi" },
+          { id: "skills", label: "Compétences" },
+          { id: "portfolio", label: "Portfolio" },
+          { id: "contact", label: "Contact" },
+        ].map((item) => (
+          <li
+            key={item.id}
+            className={`cursor-pointer transition-colors duration-300 ${
+              currentSection === item.id
+                ? "font-bold text-white"
+                : "font-normal text-gray-300 hover:text-white"
+            }`}
+            onClick={() => scrollToSection(item.id)}
+          >
+            {item.label}
+          </li>
+        ))}
       </ul>
+
       <div className="relative">
         {isDropdownOpen && (
           <div className="absolute right-0 mt-2 bg-slate-800 border rounded shadow-lg z-10">
