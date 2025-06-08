@@ -43,10 +43,10 @@ const NavBar = ({ scrollToSection, currentSection }) => {
         ].map((item) => (
           <li
             key={item.id}
-            className={`cursor-pointer transition-colors duration-300 ${
+            className={`cursor-pointer transition-all duration-300 ${
               currentSection === item.id
-                ? "font-bold text-white"
-                : "font-normal text-gray-300 hover:text-white"
+                ? "font-bold text-white underline underline-offset-4 decoration-2"
+                : "font-normal text-gray-300 hover:text-white hover:underline hover:underline-offset-4 hover:decoration-2"
             }`}
             onClick={() => scrollToSection(item.id)}
           >

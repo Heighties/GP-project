@@ -45,8 +45,8 @@ const MainModal = () => {
     };
 
     const observerOptions = {
-      root: modalRef.current,
-      rootMargin: "-40% 0px -40% 0px",
+      root: modalRef.current, // observe dans le scroll container
+      rootMargin: "0px 0px -50% 0px", // section passe au milieu de l'écran
       threshold: 0.3,
     };
 
@@ -96,25 +96,25 @@ const MainModal = () => {
       </div>
 
       <div
-        className="min-h-screen xl:h-screen flex items-center justify-center "
+        className="min-h-screen xl:h-screen flex items-center justify-center snap-start"
         ref={aboutMeRef}
       >
         <AboutMe scrollToSection={scrollToSection} />
       </div>
       <div
-        className="min-h-screen xl:h-screen flex items-center justify-center "
+        className="min-h-screen xl:h-screen flex items-center justify-center snap-start"
         ref={skillsRef}
       >
         <Skills />
       </div>
       <div
-        className="min-h-screen xl:h-screen flex items-center justify-center "
+        className="min-h-screen xl:h-screen flex items-center justify-center snap-start"
         ref={portfolioRef}
       >
         <Portfolio />
       </div>
       <div
-        className="min-h-screen xl:h-screen flex items-center justify-center  bottom-0"
+        className="min-h-screen xl:h-screen flex items-center justify-center snap-start"
         ref={contactRef}
       >
         <Contact />
