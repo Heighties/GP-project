@@ -1,0 +1,220 @@
+.header {
+  @extend %header;
+}
+
+.main {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $grey;
+  width: 100%;
+  padding: 15px 0 15px 0;
+  gap: 15px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.hero {
+  margin: 0px 20px 0px 20px;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 0 30px 0;
+  }
+
+  &__title {
+    text-align: center;
+  }
+
+  &__text {
+    text-align: center;
+  }
+  a {
+    align-self: center;
+  }
+
+  &__button {
+    @extend %btn;
+    width: 250px;
+    align-self: center;
+  }
+}
+
+.process__contain {
+  padding: 25px 0;
+  width: 100%;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .process {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0px 25px;
+    display: flex;
+    flex-direction: column;
+
+    &__title {
+      margin: 10px 0px 20px;
+    }
+
+    &__steps {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    &__step {
+      @extend %shadow;
+      display: flex;
+      align-items: center;
+      background: $background_color;
+      height: auto;
+      width: auto;
+      margin: 10px 0px;
+      border-radius: 20px;
+      position: relative;
+      padding: 20px 0px 20px 0px;
+      cursor: pointer;
+
+      &:hover {
+        background: $process-hover;
+        .process__icon {
+          color: $secondary;
+        }
+      }
+    }
+
+    &__number {
+      background-color: $secondary;
+      color: white;
+      position: absolute;
+      padding: 3px 8px 3px 8px;
+      border-radius: 500px;
+      transform: translateX(-50%);
+    }
+
+    &__icon {
+      margin: 0px 20px 0 30px;
+      color: $icon-color;
+    }
+
+    &__text {
+      font-weight: bold;
+    }
+  }
+}
+
+.restaurant {
+  margin: 0;
+  background: $background_color;
+  padding: 20px 25px 50px;
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+
+  &__title {
+    padding: 0px 0px 20px 0px;
+  }
+
+  &__cards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+
+  &__card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    border-radius: 20px;
+    @extend %shadow;
+
+    &-image {
+      width: 100%;
+      height: 190px;
+    }
+
+     a {
+      width: 100%;
+      // height: 100%;
+      object-fit: cover;
+      border-radius: 20px 20px 0 0;
+     }
+    
+
+    &-image > img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 20px 20px 0 0;
+    }
+
+    
+    
+
+    &-new {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      background: $tertiary;
+      top: 20px;
+      right: 20px;
+      height: 30px;
+      width: 80px;
+      border-radius: 2px;
+
+      p {
+        color: $new_card;
+        padding: 10px 20px;
+        margin: 0;
+      }
+    }
+  }
+}
+
+.restaurant__block {
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 90px;
+  border-radius: 0 0 20px 20px;
+
+  &-info {
+    color: black;
+    margin-left: 20px;
+  }
+
+  &-name {
+    font-weight: bold;
+  }
+
+  &-hearts {
+    margin-right: 20px;
+  }
+}

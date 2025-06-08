@@ -1,0 +1,58 @@
+@media screen and (min-width: 768px) {
+  .process__contain {
+    .process__steps {
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 30px;
+    }
+    .process__step {
+      max-width: 350px;
+      width: 100%;
+    }
+  }
+
+  .footer__bloc {
+    margin-bottom: 15px;
+
+    &-links {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      max-width: 900px;
+    }
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .restaurant__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+
+  .img__image {
+    margin-top: 0;
+  }
+
+  .menu {
+    margin-top: -60px;
+  }
+
+  .menu__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 15px;
+  }
+
+  .footer__bloc {
+    margin-bottom: 15px;
+
+    &-links {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      max-width: 900px;
+    }
+  }
+}

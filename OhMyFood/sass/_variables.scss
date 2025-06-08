@@ -1,0 +1,20 @@
+/***********COLORS************/
+
+$primary: #ff79da;
+$secondary: #9356dc;
+$tertiary: #99e2d0;
+$background_color: #f6f6f6;
+$grey: #e2e2e2;
+$icon-color: #969696;
+$grad_color: linear-gradient(180deg, $primary 0%, $secondary 100%);
+$footer_color: #353535;
+$new_card: #1b6150;
+$process-hover: #f5edff;
+
+$primary_lighter: lighten($primary, 5);
+$secondary_lighter: lighten($secondary, 5);
+$grad_color_lighter: linear-gradient(
+  180deg,
+  $primary_lighter 0%,
+  $secondary_lighter 100%
+);
