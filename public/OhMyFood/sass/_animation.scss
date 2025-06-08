@@ -1,0 +1,155 @@
+/*******LOADER********/
+
+.loader {
+  background-color: white;
+  opacity: 1;
+  height: 100vh;
+  inset: 0;
+  position: fixed;
+  z-index: 100;
+  animation: disappear 200ms 2s forwards;
+
+  &__spinner {
+    animation: spin 1s infinite linear;
+    animation-delay: 0.5s;
+    border: solid 2vmin transparent;
+    border-radius: 50%;
+    border-right-color: $secondary;
+    border-top-color: $secondary;
+    box-sizing: border-box;
+    height: 20vmin;
+    left: calc(50% - 10vmin);
+    position: fixed;
+    top: calc(50% - 10vmin);
+    width: 20vmin;
+
+    &:before {
+      animation: spin 2s infinite linear;
+      animation-delay: 0.5s;
+      border: solid 2vmin transparent;
+      border-radius: 50%;
+      border-right-color: $primary;
+      border-top-color: $primary;
+      box-sizing: border-box;
+      content: "";
+      height: 16vmin;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 16vmin;
+    }
+    &:after {
+      animation: spin 3s infinite linear;
+      animation-delay: 0.5s;
+      border: solid 2vmin transparent;
+      border-radius: 50%;
+      border-right-color: $tertiary;
+      border-top-color: $tertiary;
+      box-sizing: border-box;
+      content: "";
+      height: 12vmin;
+      left: 2vmin;
+      position: absolute;
+      top: 2vmin;
+      width: 12vmin;
+    }
+  }
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes disappear {
+  0% {
+    opacity: 1;
+    z-index: 10;
+  }
+
+  99% {
+    opacity: 0;
+    z-index: 10;
+  }
+
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+/***********VALIDATION BOX************/
+
+@mixin quarter-spin {
+  @keyframes quarter-spin {
+    0% {
+      transform: rotate(-270deg);
+    }
+  }
+}
+
+/***************HEARTS*******************/
+
+.heart {
+  fill: transparent;
+  stroke: black;
+  stroke-width: 20;
+  cursor: pointer;
+  position: relative;
+
+  svg {
+    overflow: visible;
+    width: 1.5rem;
+    height: 2rem;
+  }
+
+  path {
+    stroke-dashoffset: 0;
+    transform-origin: center;
+  }
+
+  &-full {
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    stroke: transparent;
+    fill: transparent;
+    &:hover path {
+      animation: filling-animation 0.3s ease-in-out forwards;
+    }
+  }
+}
+
+@keyframes filling-animation {
+  10% {
+    transform: scale(0.2);
+    fill: url(#text-fill);
+  }
+
+  100% {
+    transform: scale(1.02);
+    fill: url(#text-fill);
+    stroke: url(#text-fill);
+  }
+}
+
+/*************SLIDE**************/
+
+@keyframes slide-down {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@for $i from 1 to 10 {
+  #case-#{$i} {
+    animation: slide-down $i * 0.7s;
+  }
+}

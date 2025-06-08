@@ -7,6 +7,7 @@ const datas = [
       "Intégration de la page d'accueil d'une agence de voyage en utilisant HTML et CSS, avec pour objectif principal de créer une interface responsive. Les maquettes Figma pour mobile, tablette et desktop ont été utilisées, ainsi que les images et une note de synthèse sur les spécificités du projet.",
 
     stacks: "HTML, CSS",
+    link: "Booki/Booki/index.html",
   },
   {
     id: 2,
@@ -18,6 +19,7 @@ const datas = [
     description:
       "Intégration de l'interface mobile-first du site d'une start-up, en utilisant SASS pour les animations CSS et Git/GitHub pour le versionnement. Les maquettes pour mobile et desktop, ainsi que le prototype sur Figma, les images et les textes nécessaires ont été fournis.",
     stacks: "HTML, SCSS, Git, GitHub",
+    link: "OhMyFood/html/index.html",
   },
   {
     id: 3,

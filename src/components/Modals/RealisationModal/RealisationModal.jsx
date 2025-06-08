@@ -43,6 +43,16 @@ const RealisationModal = ({ isOpen, closeModal, realisation }) => {
               <p className="mt-2 p-4 xl:p-0 xl:w-3/4 text-white">
                 {realisation.description}
               </p>
+              {/* {realisation.link && (
+                <a
+                  href={realisation.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-6 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition"
+                >
+                  Voir la page
+                </a>
+              )} */}
             </div>
           </div>
           <div className="realisation-card cursor-pointer mb-10 xl:mb-0 xl:w-1/2 h-full">

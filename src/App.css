@@ -37,9 +37,11 @@
   }
 }
 
-html, body {
+html,
+body {
   overflow: hidden;
   height: 100%;
+  color-scheme: light !important;
 }
 
 .hide-scrollbar {
@@ -58,7 +60,6 @@ html, body {
 .flipped .front-face {
   display: none;
 }
-
 
 .preserve-3d {
   transform-style: preserve-3d;
@@ -146,7 +147,7 @@ html, body {
   background: white;
   transition: all 0.3s linear;
   position: relative;
-  z-index: 50; 
+  z-index: 50;
 }
 
 .hamburger .bar1 {
