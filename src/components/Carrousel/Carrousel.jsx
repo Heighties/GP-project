@@ -110,13 +110,13 @@ export const Carrousel = ({ items = [] }) => {
         className="flex overflow-x-auto hide-scrollbar"
         onScroll={handleScroll}
       >
-        <div className="flex flex-nowrap p-4 gap-20">
+        <div className="flex flex-nowrap p-4 gap-4">
           {slides.map((slide, slideIndex) => (
             <div
               key={slideIndex}
-              className="flex-none grid gap-2
-                grid-cols-2 sm:grid-cols-2 md:grid-cols-4
-                grid-rows-2 sm:grid-rows-2 md:grid-rows-2 lg:grid-rows-3 gap-y-12 gap-x-6"
+              className="flex-none grid justify-center w-full gap-4
+                grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4
+                grid-rows-3 sm:grid-rows-2 md:grid-rows-2 lg:grid-rows-2 gap-y-8 gap-x-4"
             >
               {slide.map((item, index) => (
                 <RealCard

@@ -50,7 +50,7 @@ const Skills = () => {
   );
 
   return (
-    <div className="flex flex-col items-center w-full min-h-[calc(100vh-80px)] pt-20 pb-8">
+    <div className="flex flex-col items-center w-full pt-20 pb-8">
       <div className="text-center mb-6">
         <h1 className="font-bold text-white text-2xl xl:text-4xl mb-3">
           Mes Compétences

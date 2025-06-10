@@ -4,7 +4,7 @@ import datas from "../../datas/datas";
 
 const Portfolio = () => {
   return (
-    <div className="relative flex flex-col min-h-screen xl:h-full items-center xl:justify-center md:mt-24 xl:mt-60 ">
+    <div className="relative flex flex-col items-center md:mt-8 xl:mt-8 ">
       <div className="text-center">
         <h1 className="font-bold text-white text-2xl xl:text-4xl mb-3">
           Portfolio

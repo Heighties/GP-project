@@ -96,25 +96,25 @@ const MainModal = () => {
       </div>
 
       <div
-        className="min-h-screen xl:h-screen flex items-center justify-center snap-start"
+        className="flex items-center justify-center snap-start"
         ref={aboutMeRef}
       >
         <AboutMe scrollToSection={scrollToSection} />
       </div>
       <div
-        className="min-h-screen xl:h-screen flex items-center justify-center snap-start"
+        className="flex items-center justify-center snap-start"
         ref={skillsRef}
       >
         <Skills />
       </div>
       <div
-        className="min-h-screen xl:h-screen flex items-center justify-center snap-start"
+        className="flex items-center justify-center snap-start"
         ref={portfolioRef}
       >
         <Portfolio />
       </div>
       <div
-        className="min-h-screen xl:h-screen flex items-center justify-center snap-start"
+        className="flex items-center justify-center snap-start"
         ref={contactRef}
       >
         <Contact />
