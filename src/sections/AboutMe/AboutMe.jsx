@@ -62,7 +62,7 @@ const AboutMe = ({ scrollToSection }) => {
           </p>
           <button
             onClick={() => scrollToSection("contact")}
-            className="mt-5 xl:mt-10 bg-slate-700 border-2 border-slate-400 px-10 py-2 rounded-full"
+            className="mt-5 xl:mt-10 bg-slate-700 border-2 border-slate-400 px-10 py-2 rounded-full hover:scale-105 transition-transform duration-300 ease-in-out"
           >
             Me contacter
           </button>
